@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Главная</title>
+  <meta charset="UTF-8">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/style.min.css?_v=20221130113815">
+  <!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <a class="header__logo" href="">
+          <picture>
+            <source srcset="img/logo.webp" type="image/webp">
+            <img src="img/logo.png" alt="concept">
+          </picture>
+        </a>
+        <div class="header__right">
+          <div class="header__name">Гарайшин Ильназ</div>
+          <div class="header__icon">
+            <picture>
+              <source srcset="img/profile-logo.webp" type="image/webp">
+              <img src="img/profile-logo.jpg" alt="Гарайшин Ильназ">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page">
+      <aside class="left-menu" data-spollers="991.98,max">
+        <div class="left-menu__label" type="button" data-spoller>Меню</div>
+        <ul class="left-menu__list">
+          <li class="left-menu__item">
+            <a class="left-menu__link" href="search-messages.html">Поиск сообщений</a>
+          </li>
+          <li class="left-menu__item">
+            <a class="left-menu__link" href="send-messages.html">Рассылка сообщений</a>
+          </li>
+          <li class="left-menu__item">
+            <a class="left-menu__link" href="">FAQ</a>
+          </li>
+          <li class="left-menu__item">
+            <a class="left-menu__link" href="">Выйти</a>
+          </li>
+        </ul>
+      </aside>
+      <div class="content">
+        <h2 class="content__title">Публикация постов в Telegram</h2>
+        <h3 class="content__subtitle">Публикуйте сообщения в социальной сети Telegram по параметрам</h3>
+        <div class="content__descr">Список постов</div>
+        <form class="content__form" action="#">
+          <div class="content__line">
+            <label class="content__label" for="title-post">Заголовок поста</label>
+            <input class="input content__input" id="title-post" autocomplete="off" type="text" name="form[]">
+          </div>
+          <div class="content__line">
+            <label class="content__label" for="text-post">Текст поста</label>
+
+            <textarea class="textarea content__textarea" id="text-post" autocomplete="off" type="text" name="form[]"></textarea>
+          </div>
+          <div class="content__line">
+            <label class="content__label" for="channels-post">Каналы для публикации:</label>
+            <textarea class="textarea content__textarea" id="channels-post" autocomplete="off" type="text" name="form[]"></textarea>
+          </div>
+          <button class="content__btn btn">Опубликовать</button>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+
+      </div>
+    </footer>
+  </div>
+
+  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=51092280-e018-4241-bc97-180570de25d4&lang=ru_RU&_v=20221130113815"></script> -->
+  <script src="js/app.min.js?_v=20221130113815"></script>
+
+</body>
+
+</html>
