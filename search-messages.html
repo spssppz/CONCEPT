@@ -2,10 +2,10 @@
 <html lang="ru">
 
 <head>
-  <title>Главная</title>
+  <title>Поиск сообщений</title>
   <meta charset="UTF-8">
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="css/style.min.css?_v=20221130113815">
+  <link rel="stylesheet" href="css/style.min.css?_v=20221201161518">
   <!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
   <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,7 @@
             <img src="img/logo.png" alt="concept">
           </picture>
         </a>
-        <div class="header__right">
+        <a class="header__right" href="index.html">
           <div class="header__name">Гарайшин Ильназ</div>
           <div class="header__icon">
             <picture>
@@ -30,7 +30,7 @@
               <img src="img/profile-logo.jpg" alt="Гарайшин Ильназ">
             </picture>
           </div>
-        </div>
+        </a>
       </div>
     </header>
     <main class="page">
@@ -41,10 +41,10 @@
             <a class="left-menu__link" href="search-messages.html">Поиск сообщений</a>
           </li>
           <li class="left-menu__item">
-            <a class="left-menu__link" href="send-messages.html">Рассылка сообщений</a>
+            <a class="left-menu__link" href="send-messages.html">Отправка сообщений</a>
           </li>
           <li class="left-menu__item">
-            <a class="left-menu__link" href="">FAQ</a>
+            <a class="left-menu__link" href="message-queue.html">Сообщения в очереди</a>
           </li>
           <li class="left-menu__item">
             <a class="left-menu__link" href="">Выйти</a>
@@ -52,23 +52,24 @@
         </ul>
       </aside>
       <div class="content">
-        <h2 class="content__title">Поиск сообщений в Telegram</h2>
-        <h3 class="content__subtitle">Находите сообщения в социальной сети Telegram по параметрам</h3>
-        <div class="content__descr">Поиск сообщений</div>
+        <h2 class="content__title title">Поиск сообщений в Telegram</h2>
+        <!-- <h3 class="content__subtitle">Находите сообщения в социальной сети Telegram по параметрам</h3> -->
+        <!-- <div class="content__descr">Поиск сообщений</div> -->
         <form class="content__form" action="#">
-          <div class="content__line">
-            <label class="content__label" for="title-post">Ключевые слова</label>
-            <input class="input content__input" id="title-post" autocomplete="off" type="text" name="form[]">
-          </div>
-          <div class="content__line">
-            <label class="content__label" for="text-post">Список каналов</label>
+          <div class="content__line line">
+            <label class="content__label label" for="text-post">Список каналов</label>
             <textarea class="textarea content__textarea" id="text-post" autocomplete="off" type="text" name="form[]"></textarea>
           </div>
-          <div class="content__line">
-            <label class="content__label" for="channels-post">Куда переслать сообщения</label>
+          <div class="content__line line">
+            <label class="content__label label" for="title-post">Ключевые слова</label>
+            <input class="input content__input" id="title-post" autocomplete="off" type="text" name="form[]">
+          </div>
+          <div class="content__line line">
+            <label class="content__label label" for="channels-post">Список групп</label>
             <textarea class="textarea content__textarea" id="channels-post" autocomplete="off" type="text" name="form[]"></textarea>
           </div>
-          <button class="content__btn btn">Применить</button>
+          <button class="content__btn btn">Старт</button>
+          <button class="content__btn btn btn_red">Стоп</button>
         </form>
       </div>
     </main>
@@ -79,8 +80,8 @@
     </footer>
   </div>
 
-  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=51092280-e018-4241-bc97-180570de25d4&lang=ru_RU&_v=20221130113815"></script> -->
-  <script src="js/app.min.js?_v=20221130113815"></script>
+  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=51092280-e018-4241-bc97-180570de25d4&lang=ru_RU&_v=20221201161518"></script> -->
+  <script src="js/app.min.js?_v=20221201161518"></script>
 
 </body>
 

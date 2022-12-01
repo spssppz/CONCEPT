@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-  <title>Гарайшин Ильназ</title>
+  <title>Сообщения в очереди</title>
   <meta charset="UTF-8">
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/style.min.css?_v=20221201161518">
@@ -52,26 +52,24 @@
         </ul>
       </aside>
       <div class="content">
-        <div class="content__top">
-          <div class="content__descr">Имя:</div>
-          <div class="content__subtitle">Ильназ</div>
-          <div class="content__descr">Фамилия:</div>
-          <div class="content__subtitle">Гарайшин</div>
-          <div class="content__descr">Номер телефона:</div>
-          <div class="content__subtitle">+7 999 155-53-88</div>
-          <div class="content__descr">Аккаунт telegram:</div>
-          <div class="content__subtitle">@spssppz</div>
-        </div>
+        <h2 class="content__title title">Сообщения в очереди</h2>
+        <!-- <h3 class="content__subtitle">Находите сообщения в социальной сети Telegram по параметрам</h3> -->
+        <!-- <div class="content__descr">Поиск сообщений</div> -->
         <form class="content__form" action="#">
           <div class="content__line line">
-            <label class="content__label label" for="title-post">API ID</label>
+            <label class="content__label label" for="text-post">Список каналов</label>
+            <textarea class="textarea content__textarea" id="text-post" autocomplete="off" type="text" name="form[]"></textarea>
+          </div>
+          <div class="content__line line">
+            <label class="content__label label" for="title-post">Ключевые слова</label>
             <input class="input content__input" id="title-post" autocomplete="off" type="text" name="form[]">
           </div>
           <div class="content__line line">
-            <label class="content__label label" for="text-post">API HASH</label>
-            <textarea class="textarea content__textarea" id="text-post" autocomplete="off" type="text" name="form[]"></textarea>
+            <label class="content__label label" for="channels-post">Список групп</label>
+            <textarea class="textarea content__textarea" id="channels-post" autocomplete="off" type="text" name="form[]"></textarea>
           </div>
-          <button class="content__btn btn">Отправить</button>
+          <button class="content__btn btn">Старт</button>
+          <button class="content__btn btn btn_red">Стоп</button>
         </form>
       </div>
     </main>

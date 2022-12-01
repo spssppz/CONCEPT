@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-  <title>Контакты</title>
+  <title>Регистрация</title>
   <meta charset="UTF-8">
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/style.min.css?_v=20221201161518">
@@ -34,7 +34,24 @@
       </div>
     </header>
     <main class="page">
-
+      <div class="auth">
+        <div class="auth__body">
+          <h2 class="auth__title title">Регистрация</h2>
+          <form class="auth__form" action="#">
+            <div class="auth__line line">
+              <label class="auth__label label" for="">Введите логин:</label>
+              <input class="input auth__input" autocomplete="off" type="text" name="form[]" placeholder="">
+            </div>
+            <div class="auth__line line">
+              <label class="auth__label label" for="">Введите пароль:</label>
+              <input class="input auth__input" autocomplete="off" type="password" name="form[]" placeholder="">
+            </div>
+            <button class="auth__btn btn">Зарегистрироваться</button>
+          </form>
+          <a class="auth__descr" href="auth.html">Войти</a>
+          <a class="auth__descr" href="forgot-pass.html">Забыли пароль?</a>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__container">
