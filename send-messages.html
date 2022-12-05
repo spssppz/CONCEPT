@@ -5,7 +5,7 @@
   <title>Отправка сообщений</title>
   <meta charset="UTF-8">
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="css/style.min.css?_v=20221201161518">
+  <link rel="stylesheet" href="css/style.min.css?_v=20221205162619">
   <!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
   <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,14 +47,15 @@
             <a class="left-menu__link" href="message-queue.html">Сообщения в очереди</a>
           </li>
           <li class="left-menu__item">
+            <a class="left-menu__link" href="message-archive.html">Архивированные сообщения</a>
+          </li>
+          <li class="left-menu__item">
             <a class="left-menu__link" href="">Выйти</a>
           </li>
         </ul>
       </aside>
       <div class="content">
         <h2 class="content__title title">Отправка сообщений</h2>
-        <!-- <h3 class="content__subtitle">Публикуйте сообщения в социальной сети Telegram по параметрам</h3>
-				<div class="content__descr">Список постов</div> -->
         <form class="content__form" action="#">
           <div class="content__line line">
             <label class="content__label label" for="title-post">Заголовок сообщения</label>
@@ -66,15 +67,15 @@
           </div>
           <div class="content__line line">
             <label class="content__label label" for="channels-post">Файлы:</label>
-            <input class="content__input" multiple="multiple" autocomplete="off" type="file" name="form[]" placeholder="">
+            <input class="content__input" multiple="multiple" autocomplete="off" type="file" name="form[]">
           </div>
           <div class="content__line line">
-            <label class="content__label label" for="channels-post">Дата отправки:</label>
-            <input class="content__input input_date" autocomplete="off" type="date" name="form[]" placeholder="">
+            <label class="content__label label" for="data-send">Дата отправки:</label>
+            <input class="content__input input_date" id="data-send" autocomplete="off" type="date" name="form[]">
           </div>
-          <div class="content__line line">
-            <label class="content__label label" for="channels-post">Время отправки:</label>
-            <input class="content__input input_date" autocomplete="off" type="datetime" name="form[]" placeholder="">
+          <div class=" content__line line">
+            <label class="content__label label" for="time-send">Время отправки:</label>
+            <input class="content__input input_date" id="time-send" value="12:00" autocomplete="off" type="datetime" name="form[]">
           </div>
           <button class="content__btn btn">Опубликовать</button>
         </form>
@@ -87,8 +88,8 @@
     </footer>
   </div>
 
-  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=51092280-e018-4241-bc97-180570de25d4&lang=ru_RU&_v=20221201161518"></script> -->
-  <script src="js/app.min.js?_v=20221201161518"></script>
+  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=51092280-e018-4241-bc97-180570de25d4&lang=ru_RU&_v=20221205162619"></script> -->
+  <script src="js/app.min.js?_v=20221205162619"></script>
 
 </body>
 
