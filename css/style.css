@@ -567,6 +567,12 @@ textarea.input {
           flex-direction: column;
 }
 
+.content__spollers-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+
 .content__row {
   -webkit-box-align: center;
       -ms-flex-align: center;
