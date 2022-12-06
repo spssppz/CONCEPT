@@ -5,7 +5,7 @@
   <title>Название поста</title>
   <meta charset="UTF-8">
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="css/style.min.css?_v=20221205162619">
+  <link rel="stylesheet" href="css/style.min.css?_v=20221206123358">
   <!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
   <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,18 +17,12 @@
     <header class="header">
       <div class="header__container">
         <a class="header__logo" href="">
-          <picture>
-            <source srcset="img/logo.webp" type="image/webp">
-            <img src="img/logo.png" alt="concept">
-          </picture>
+          <img src="img/logo.png" alt="concept">
         </a>
         <a class="header__right" href="index.html">
           <div class="header__name">Гарайшин Ильназ</div>
           <div class="header__icon">
-            <picture>
-              <source srcset="img/profile-logo.webp" type="image/webp">
-              <img src="img/profile-logo.jpg" alt="Гарайшин Ильназ">
-            </picture>
+            <img src="img/profile-logo.jpg" alt="Гарайшин Ильназ">
           </div>
         </a>
       </div>
@@ -61,101 +55,175 @@
             <label class="content__label label" for="title-post">Группы</label>
             <input class="input content__input" id="title-post" autocomplete="off" type="text" name="form[]">
           </div>
-          <div class="content__line line">
-            <div class="content__label label">График публикации</div>
-            <div class="options">
-              <div class="options__item">
-                <input class="options__input" hidden id="o_1" checked type="radio" value="1" name="option">
-                <label class="options__label" for="o_1">
-                  <span class="options__text">каждый день</span>
-                </label>
-              </div>
-              <div class="options__item">
-                <input class="options__input" hidden id="o_2" type="radio" value="2" name="option">
-                <label class="options__label" for="o_2">
-                  <span class="options__text">через день</span>
-                </label>
-              </div>
-              <div class="options__item">
-                <input class="options__input" hidden id="o_3" type="radio" value="3" name="option">
-                <label class="options__label" for="o_3">
-                  <span class="options__text">через 2 дня</span>
-                </label>
-              </div>
-              <div class="options__item">
-                <input class="options__input" hidden id="o_4" type="radio" value="4" name="option">
-                <label class="options__label" for="o_4">
-                  <span class="options__text">через 3 дня</span>
-                </label>
-              </div>
-              <div class="options__item">
-                <input class="options__input" hidden id="o_5" type="radio" value="5" name="option">
-                <label class="options__label" for="o_5">
-                  <span class="options__text">через каждые 4 дня</span>
-                </label>
-              </div>
-              <div class="options__item">
-                <input class="options__input" hidden id="o_6" type="radio" value="6" name="option">
-                <label class="options__label" for="o_6">
-                  <span class="options__text">через каждые 5 дней</span>
-                </label>
-              </div>
-              <div class="options__item">
-                <input class="options__input" hidden id="o_7" type="radio" value="7" name="option">
-                <label class="options__label" for="o_7">
-                  <span class="options__text">через каждые 6 дней</span>
-                </label>
-              </div>
-              <div class="options__item">
-                <input class="options__input" hidden id="o_8" type="radio" value="8" name="option">
-                <label class="options__label" for="o_8">
-                  <span class="options__text">раз в неделю</span>
-                </label>
-              </div>
-              <div class="options__item">
-                <input class="options__input" hidden id="o_9" type="radio" value="9" name="option">
-                <label class="options__label" for="o_9">
-                  <span class="options__text">Каждый понедельник</span>
-                </label>
-              </div>
-              <div class="options__item">
-                <input class="options__input" hidden id="o_10" type="radio" value="10" name="option">
-                <label class="options__label" for="o_10">
-                  <span class="options__text">Каждый вторник</span>
-                </label>
-              </div>
-              <div class="options__item">
-                <input class="options__input" hidden id="o_11" type="radio" value="11" name="option">
-                <label class="options__label" for="o_11">
-                  <span class="options__text">Каждую среду</span>
-                </label>
-              </div>
-              <div class="options__item">
-                <input class="options__input" hidden id="o_12" type="radio" value="12" name="option">
-                <label class="options__label" for="o_12">
-                  <span class="options__text">Каждый четверг</span>
-                </label>
-              </div>
-              <div class="options__item">
-                <input class="options__input" hidden id="o_13" type="radio" value="13" name="option">
-                <label class="options__label" for="o_13">
-                  <span class="options__text">Каждую пятницу</span>
-                </label>
-              </div>
-              <div class="options__item">
-                <input class="options__input" hidden id="o_14" type="radio" value="14" name="option">
-                <label class="options__label" for="o_14">
-                  <span class="options__text">Каждую субботу</span>
-                </label>
-              </div>
-              <div class="options__item">
-                <input class="options__input" hidden id="o_15" type="radio" value="15" name="option">
-                <label class="options__label" for="o_15">
-                  <span class="options__text">Каждое воскресенье</span>
-                </label>
+          <div class="content-spollers" data-spollers>
+            <div class="content-spollers__item">
+              <button class="content-spollers__title" type="button" data-spoller>График публикации</button>
+              <div class="content-spollers__body">
+                <div class="options">
+                  <div class="options__item">
+                    <input class="options__input" hidden id="o_1" checked type="radio" value="1" name="option">
+                    <label class="options__label" for="o_1">
+                      <span class="options__text">каждый день</span>
+                    </label>
+                  </div>
+                  <div class="options__item">
+                    <input class="options__input" hidden id="o_2" type="radio" value="2" name="option">
+                    <label class="options__label" for="o_2">
+                      <span class="options__text">через день</span>
+                    </label>
+                  </div>
+                  <div class="options__item">
+                    <input class="options__input" hidden id="o_3" type="radio" value="3" name="option">
+                    <label class="options__label" for="o_3">
+                      <span class="options__text">через 2 дня</span>
+                    </label>
+                  </div>
+                  <div class="options__item">
+                    <input class="options__input" hidden id="o_4" type="radio" value="4" name="option">
+                    <label class="options__label" for="o_4">
+                      <span class="options__text">через 3 дня</span>
+                    </label>
+                  </div>
+                  <div class="options__item">
+                    <input class="options__input" hidden id="o_5" type="radio" value="5" name="option">
+                    <label class="options__label" for="o_5">
+                      <span class="options__text">через каждые 4
+                        дня</span>
+                    </label>
+                  </div>
+                  <div class="options__item">
+                    <input class="options__input" hidden id="o_6" type="radio" value="6" name="option">
+                    <label class="options__label" for="o_6">
+                      <span class="options__text">через каждые 5
+                        дней</span>
+                    </label>
+                  </div>
+                  <div class="options__item">
+                    <input class="options__input" hidden id="o_7" type="radio" value="7" name="option">
+                    <label class="options__label" for="o_7">
+                      <span class="options__text">через каждые 6
+                        дней</span>
+                    </label>
+                  </div>
+                  <div class="options__item">
+                    <input class="options__input" hidden id="o_8" type="radio" value="8" name="option">
+                    <label class="options__label" for="o_8">
+                      <span class="options__text">раз в неделю</span>
+                    </label>
+                  </div>
+                  <div class="options__item">
+                    <input class="options__input" hidden id="o_9" type="radio" value="9" name="option">
+                    <label class="options__label" for="o_9">
+                      <span class="options__text">Каждый
+                        понедельник</span>
+                    </label>
+                  </div>
+                  <div class="options__item">
+                    <input class="options__input" hidden id="o_10" type="radio" value="10" name="option">
+                    <label class="options__label" for="o_10">
+                      <span class="options__text">Каждый вторник</span>
+                    </label>
+                  </div>
+                  <div class="options__item">
+                    <input class="options__input" hidden id="o_11" type="radio" value="11" name="option">
+                    <label class="options__label" for="o_11">
+                      <span class="options__text">Каждую среду</span>
+                    </label>
+                  </div>
+                  <div class="options__item">
+                    <input class="options__input" hidden id="o_12" type="radio" value="12" name="option">
+                    <label class="options__label" for="o_12">
+                      <span class="options__text">Каждый четверг</span>
+                    </label>
+                  </div>
+                  <div class="options__item">
+                    <input class="options__input" hidden id="o_13" type="radio" value="13" name="option">
+                    <label class="options__label" for="o_13">
+                      <span class="options__text">Каждую пятницу</span>
+                    </label>
+                  </div>
+                  <div class="options__item">
+                    <input class="options__input" hidden id="o_14" type="radio" value="14" name="option">
+                    <label class="options__label" for="o_14">
+                      <span class="options__text">Каждую субботу</span>
+                    </label>
+                  </div>
+                  <div class="options__item">
+                    <input class="options__input" hidden id="o_15" type="radio" value="15" name="option">
+                    <label class="options__label" for="o_15">
+                      <span class="options__text">Каждое
+                        воскресенье</span>
+                    </label>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <!-- <div class="content__line line">
+						<div class="content__label label">График публикации</div>
+						<div class="options">
+							<div class="options__item">
+								<input class="options__input" hidden id="o_1" checked type="radio" value="1" name="option">
+								<label class="options__label" for="o_1"><span class="options__text">каждый день</span></label>
+							</div>
+							<div class="options__item">
+								<input class="options__input" hidden id="o_2" type="radio" value="2" name="option">
+								<label class="options__label" for="o_2"><span class="options__text">через день</span></label>
+							</div>
+							<div class="options__item">
+								<input class="options__input" hidden id="o_3" type="radio" value="3" name="option">
+								<label class="options__label" for="o_3"><span class="options__text">через 2 дня</span></label>
+							</div>
+							<div class="options__item">
+								<input class="options__input" hidden id="o_4" type="radio" value="4" name="option">
+								<label class="options__label" for="o_4"><span class="options__text">через 3 дня</span></label>
+							</div>
+							<div class="options__item">
+								<input class="options__input" hidden id="o_5" type="radio" value="5" name="option">
+								<label class="options__label" for="o_5"><span class="options__text">через каждые 4 дня</span></label>
+							</div>
+							<div class="options__item">
+								<input class="options__input" hidden id="o_6" type="radio" value="6" name="option">
+								<label class="options__label" for="o_6"><span class="options__text">через каждые 5 дней</span></label>
+							</div>
+							<div class="options__item">
+								<input class="options__input" hidden id="o_7" type="radio" value="7" name="option">
+								<label class="options__label" for="o_7"><span class="options__text">через каждые 6 дней</span></label>
+							</div>
+							<div class="options__item">
+								<input class="options__input" hidden id="o_8" type="radio" value="8" name="option">
+								<label class="options__label" for="o_8"><span class="options__text">раз в неделю</span></label>
+							</div>
+							<div class="options__item">
+								<input class="options__input" hidden id="o_9" type="radio" value="9" name="option">
+								<label class="options__label" for="o_9"><span class="options__text">Каждый понедельник</span></label>
+							</div>
+							<div class="options__item">
+								<input class="options__input" hidden id="o_10" type="radio" value="10" name="option">
+								<label class="options__label" for="o_10"><span class="options__text">Каждый вторник</span></label>
+							</div>
+							<div class="options__item">
+								<input class="options__input" hidden id="o_11" type="radio" value="11" name="option">
+								<label class="options__label" for="o_11"><span class="options__text">Каждую среду</span></label>
+							</div>
+							<div class="options__item">
+								<input class="options__input" hidden id="o_12" type="radio" value="12" name="option">
+								<label class="options__label" for="o_12"><span class="options__text">Каждый четверг</span></label>
+							</div>
+							<div class="options__item">
+								<input class="options__input" hidden id="o_13" type="radio" value="13" name="option">
+								<label class="options__label" for="o_13"><span class="options__text">Каждую пятницу</span></label>
+							</div>
+							<div class="options__item">
+								<input class="options__input" hidden id="o_14" type="radio" value="14" name="option">
+								<label class="options__label" for="o_14"><span class="options__text">Каждую субботу</span></label>
+							</div>
+							<div class="options__item">
+								<input class="options__input" hidden id="o_15" type="radio" value="15" name="option">
+								<label class="options__label" for="o_15"><span class="options__text">Каждое воскресенье</span></label>
+							</div>
+						</div>
+					</div> -->
           <div class="content__line line">
             <label class="content__label label" for="time-post">Время отправки:</label>
             <input class="content__input input_date" id="time-post" value="08:30" autocomplete="off" type="datetime" name="form[]">
@@ -176,8 +244,8 @@
     </footer>
   </div>
 
-  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=51092280-e018-4241-bc97-180570de25d4&lang=ru_RU&_v=20221205162619"></script> -->
-  <script src="js/app.min.js?_v=20221205162619"></script>
+  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=51092280-e018-4241-bc97-180570de25d4&lang=ru_RU&_v=20221206123358"></script> -->
+  <script src="js/app.min.js?_v=20221206123358"></script>
 
 </body>
 
